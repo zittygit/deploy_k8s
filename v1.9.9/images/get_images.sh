@@ -37,6 +37,9 @@ for image in ${images[@]}
   # etcd
   docker pull gcr.io/google_containers/etcd-amd64:3.1.11
   docker save -o etcd-amd64-3.1.11.tar gcr.io/google_containers/etcd-amd64:3.1.11
+  #flannel
+  docker pull quay.io/coreos/flannel:v0.10.0-amd64
+  docker save -o flannel-v0.10.0-amd64.tar quay.io/coreos/flannel:v0.10.0-amd64
 }
 
 
