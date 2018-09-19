@@ -21,12 +21,12 @@ yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
 systemctl enable kubelet && systemctl start kubelet
 ```
 - 查看 kubelet,kubeadm,kubectl版本
-···
+```
 yum list kubeadm --disableexcludes=kubernetes --showduplicates
-···
+```
 - 下载指定版本的rpm到指定的目录
-···
+```
 yum install -y kubelet-1.9.9-0 kubeadm-1.9.9-0 kubectl-1.9.9-0 --disableexcludes=kubernetes --downloadonly --downloaddir=/root/package/k8s
 #打包
 tar -zcvf k8s.tar.gz /root/package/k8s/
-····
+```
